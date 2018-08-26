@@ -26,4 +26,8 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('peer_connected', data);
     });
 
+    // Handle peer disconnected event
+    socket.on('peer_disconnected', function(data){
+        socket.broadcast.emit('peer_disconnected', data);
+    });
 });
