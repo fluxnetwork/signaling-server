@@ -16,10 +16,14 @@ io.on('connection', (socket) => {
 
     console.log('made socket connection', socket.id);
 
-    // Handle chat event
+    // Handle task event
     socket.on('task', function(data){
-        // console.log(data);
         io.sockets.emit('task', data);
+    });
+
+    // Handle peer connection event
+    socket.on('peer_connected', function(data){
+        socket.broadcast.emit('peer_connected', data);
     });
 
 });
