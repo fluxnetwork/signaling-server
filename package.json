@@ -1,0 +1,26 @@
+{
+  "name": "signaling-server",
+  "version": "0.1.0",
+  "description": "Socket.io based signaling service for WebRTC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluxnetwork/signaling-server.git"
+  },
+  "author": "Jose Torres",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/fluxnetwork/signaling-server/issues"
+  },
+  "homepage": "https://github.com/fluxnetwork/signaling-server#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
